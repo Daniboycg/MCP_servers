@@ -57,6 +57,12 @@
         "args": [
           "/Users/danielcarreon/Documents/AI/MCP_servers/Archon/mcp/mcp_server.py"
         ]
+      },
+      "firecrawl": {
+        "command": "firecrawl-mcp",
+        "env": {
+          "FIRECRAWL_API_KEY": "fc-YOUR_API_KEY"
+        }
       }
     }
   }
