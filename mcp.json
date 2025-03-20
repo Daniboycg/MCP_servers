@@ -1,0 +1,62 @@
+{
+    "mcpServers": {
+      "n8n workflow creator": {
+        "command": "node",
+        "args": [
+          "/Users/danielcarreon/Documents/AI/MCP_servers/n8n-workflow-builder-mcp-server/build/index.js"
+        ]
+      },
+      "github": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "@modelcontextprotocol/server-github"
+        ],
+        "env": {
+          "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_PAT}"
+        }
+      },
+      "browser_tools": {
+        "command": "npx",
+        "args": [
+          "@agentdeskai/browser-tools-mcp@1.2.0"
+        ]
+      },
+      "git": {
+        "command": "uvx",
+        "args": [
+          "mcp-server-git",
+          "--repository",
+          "/Users/danielcarreon/Documents/AI/MCP_servers"
+        ]
+      },
+      "filesystem": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "@modelcontextprotocol/server-filesystem",
+          "/Users/danielcarreon/Documents/AI/MCP_servers"
+        ]
+      },
+      "sequential-thinking": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "@modelcontextprotocol/server-sequential-thinking"
+        ]
+      },
+      "docker": {
+        "command": "uv",
+        "args": [
+          "run",
+          "mcp-server-docker"
+        ]
+      },
+      "archon": {
+        "command": "python",
+        "args": [
+          "/Users/danielcarreon/Documents/AI/MCP_servers/Archon/mcp/mcp_server.py"
+        ]
+      }
+    }
+  }
