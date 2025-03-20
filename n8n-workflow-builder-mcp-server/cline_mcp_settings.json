@@ -1,0 +1,26 @@
+{
+  "n8n-workflow-builder": {
+    "command": "node",
+    "args": ["build/index.js"],
+    "env": {
+      "N8N_HOST": "https://primary-production-9d22.up.railway.app/api/v1",
+      "_API_NOTE": "URL updated to include '/api/v1' path which is required by n8n's REST API",
+      "_CUSTOM_DOMAIN": "https://n8n.cognitiveds.ai/",
+      "N8N_API_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5OTYwNDY2Ny0xY2YyLTQ5MTItYTRjMy1lOTc2ZWNhMWU5YzIiLCJpc3MiOiJuOG4iLCJhdWQiOiJwdWJsaWMtYXBpIiwiaWF0IjoxNzQyMDkwMzA1fQ.3RWhf98U6XHXH2dkBykAG8bXxU2cHgMtxt7bGdvOWeM",
+      "GITHUB_TOKEN": ""
+    },
+    "disabled": false,
+    "alwaysAllow": [
+      "create_workflow",
+      "create_workflow_and_activate",
+      "update_workflow",
+      "activate_workflow",
+      "deactivate_workflow",
+      "get_workflow",
+      "delete_workflow",
+      "list_nodes",
+      "get_node_info"
+    ],
+    "autoApprove": []
+  }
+} 
